@@ -9,7 +9,7 @@ Ruta de especialización de un ingeniero en estadística en análisis de datos d
 | Fase | Tema | Entregable | Estado |
 |---|---|---|---|
 | 0 | Fundamentos, mapa de datos y entorno | Repositorio + mapa de datos del fútbol | En curso |
-| 1 | Datos de eventos y métricas descriptivas | Informe post-partido automatizado | Pendiente |
+| 1 | Datos de eventos y métricas descriptivas | Informe post-partido automatizado | En curso |
 | 2 | Goles esperados (xG) | Modelo xG propio comparado con el de StatsBomb | Pendiente |
 | 3 | Resultados, ratings y predicción | Pronóstico y simulación de una liga completa | Pendiente |
 | 4 | Valor de las acciones (xT, VAEP, EPV) | Ranking de aporte con balón por jugador | Pendiente |
@@ -20,6 +20,10 @@ Ruta de especialización de un ingeniero en estadística en análisis de datos d
 | 9 | Visión por computador y *deep learning* | Prototipo de video → posiciones 2D | Pendiente |
 | 10 | Proyecto integrador | Caso completo de punta a punta | Pendiente |
 
+## Publicaciones
+
+- Fase 0: [Mapa de datos del fútbol: qué existe, qué trae y qué permite](publicaciones/f0_mapa_de_datos.md)
+
 ## Estructura
 
 ```
@@ -29,6 +33,7 @@ Ruta de especialización de un ingeniero en estadística en análisis de datos d
 ├── src/futbol/           # funciones reutilizables (rutas, carga, variables, modelos, gráficos)
 ├── notebooks/            # una carpeta por fase
 ├── apps/                 # aplicaciones Streamlit
+├── publicaciones/        # artículos del portafolio, uno por fase
 ├── reports/figures/      # figuras de los análisis
 ├── literatura/           # lista de lecturas (los PDF no se publican)
 └── data/                 # raw / interim / processed (fuera de Git)
