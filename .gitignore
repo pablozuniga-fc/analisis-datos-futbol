@@ -4,8 +4,8 @@ data/
 # PDFs de lectura: tienen derechos de autor y no se publican
 literatura/*.pdf
 
-# Archivos que ya estaban en la carpeta antes de la ruta
-/Chen y Guestrin (2016).pdf
+# PDFs sueltos en la raíz (incluye los archivos previos a la ruta); su lugar es literatura/
+/*.pdf
 
 # Python y Jupyter
 __pycache__/
