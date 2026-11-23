@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "futbol"
+version = "0.1.0"
+description = "Funciones reutilizables de la ruta de especialización en análisis de datos de fútbol"
+requires-python = ">=3.12"
+
+[tool.setuptools.packages.find]
+where = ["src"]

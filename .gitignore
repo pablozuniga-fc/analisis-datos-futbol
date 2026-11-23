@@ -1,0 +1,27 @@
+# Datos: se descargan o generan, no van al repositorio
+data/
+
+# PDFs de lectura: tienen derechos de autor y no se publican
+literatura/*.pdf
+
+# Archivos que ya estaban en la carpeta antes de la ruta
+/Chen y Guestrin (2016).pdf
+
+# Python y Jupyter
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+.ipynb_checkpoints/
+*.sqlite
+
+# Entornos y credenciales
+.env
+.venv/
+*.key
+secrets.toml
+
+# Sistema
+desktop.ini
+Thumbs.db
+.DS_Store

@@ -1,0 +1,46 @@
+# Entorno de la ruta de especialización en análisis de datos de fútbol.
+# Crear:      conda env create -f environment.yml
+# Actualizar: conda env update -f environment.yml --prune
+# Las versiones exactas instaladas quedan en environment.lock.yml.
+# Las librerías de tracking (floodlight, databallpy) y de deep learning se agregan en las fases 7 y 9.
+# socceraction (SPADL, VAEP) va en un entorno aparte: su última versión (1.5.3) exige numpy<2,
+# y PyMC, pytensor, shap y arviz exigen numpy>=2.
+name: futbol
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.12
+  # Datos y almacenamiento
+  - numpy
+  - pandas>=2.2
+  - polars
+  - pyarrow
+  - python-duckdb
+  # Estadística y aprendizaje automático
+  - scipy
+  - statsmodels
+  - scikit-learn
+  - xgboost
+  - lightgbm
+  - shap
+  - pymc
+  - arviz
+  - bambi
+  # Visualización y productos
+  - matplotlib
+  - seaborn
+  - plotly
+  - streamlit
+  # Notebooks
+  - jupyterlab
+  - ipykernel
+  - nbconvert
+  - pip
+  - pip:
+      # Librerías específicas de fútbol
+      - statsbombpy
+      - mplsoccer
+      - kloppy
+      - soccerdata
+      - penaltyblog
